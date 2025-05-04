@@ -10,8 +10,8 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
-      # - name: Run tests
-      #   run: npm run test -- --watch=false --browsers=ChromeHeadless
+      - name: Run tests
+        run: npm run test -- --watch=false --browsers=ChromeHeadless
       - uses: actions/checkout@v4
       - run: npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
