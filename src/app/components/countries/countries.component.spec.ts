@@ -33,7 +33,7 @@ describe('CountriesComponent', () => {
   });
 
   it('should columnDefs has 2 column with proper naming', ()=>{
-    expect(component.columnDefs.length).toBe(3);
+    expect(component.columnDefs.length).toBe(2);
     expect(component.columnDefs[0].field).toBe('name');
     expect(component.columnDefs[0].headerName).toBe('Country Name');
     expect(component.columnDefs[1].field).toBe('population')
