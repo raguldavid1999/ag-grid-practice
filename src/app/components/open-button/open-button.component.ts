@@ -10,13 +10,13 @@ import { Router } from '@angular/router';
 })
 export class OpenButtonComponent {
   constructor(private router: Router){}
-  names: WritableSignal<string[]> = signal(['David', 'Nivetha', 'Kanmani', 'Robert', 'Perumal']);
+  names: WritableSignal<string[]> = signal(['Ragul','David', 'Nivetha', 'Kanmani', 'Robert', 'Perumal']);
   redirectToCountries(){
     this.router.navigate(['/countries']);
   }
 
   changeName(){
     // this.names[4] = 'Rukmani';
-    this.names.set(['David', 'Nivetha', 'Kanmani', 'Rukmani', 'Perumal'])
+    this.names.set(['Ragul','David', 'Nivetha', 'Kanmani', 'Rukmani', 'Perumal'])
   }
 }
