@@ -1,0 +1,12 @@
+<button mat-raised-button (click)="redirectToCountries()" class="open-btn">Open Countries</button>
+
+<div>
+    @for(name of names(); track name){
+        <p>{{name}}</p>
+    }
+    @empty {
+        <p>There is no name list</p>
+    }
+</div>
+
+<button type="button" (click)="changeName()">Change Name</button>
